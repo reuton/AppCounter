@@ -11,19 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
     }
-    
     
     @IBOutlet weak var counterLabel: UILabel!
-    var startValueCounter = 0
-    
-    
+    var startValueForCounter = 0
     
     @IBAction func addOneButton(_ sender: Any) {
-        startValueCounter += 1
-        counterLabel.text = "Значение счётчика: \(startValueCounter)"
+        startValueForCounter += 1
+        counterLabel.text = "Значение счётчика: \(startValueForCounter)"
     }
-    
 }
 
